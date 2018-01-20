@@ -1,6 +1,7 @@
 package de.logerbyte.bc2t2ics.bc2t;
 
 import com.sun.org.apache.xml.internal.serialize.LineSeparator;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.BufferedReader;
@@ -17,30 +18,10 @@ public class Bc2TaskFileTest {
 
     @Test
     public void test_delete_lineSeparator() throws IOException {
-        try (BufferedReader br = new BufferedReader(new FileReader("bc2t_test_file"+ File.separator+"test_lineSeparator"))) {
-            String line;
+        String string = new String(Files. readAllBytes(Paths.get("bc2t_test_file" + File.separator + "test_lineSeparator")), StandardCharsets.UTF_8);
 
-
-
-
-
-
-            while ((line = br.readLine()) != null) {
-                System.out.println(line);
-            }
-
-            String newLine = line.replace("/n", " ");
-
-        }
+        Assert.assertTrue(string.contains(System.lineSeparator()));
+        String newString = string.replace(System.lineSeparator(), " ");
+        Assert.assertFalse(newString.contains(System.lineSeparator()));
     }
-
-
-@Test
-public void test_delete_line() throws IOException {
-    String string = new String(Files.readAllBytes(Paths.get("bc2t_test_file" + File.separator + "test_lineSeparator")), StandardCharsets.UTF_8);
-    System.out.println(string);
-    String newString = string.replace(System.lineSeparator(), " ");
-    System.out.println(newString);
-
-}
 }
