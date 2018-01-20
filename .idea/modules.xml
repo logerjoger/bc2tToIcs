@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/de.logerbyte.bc2t2ics.iml" filepath="$PROJECT_DIR$/.idea/modules/de.logerbyte.bc2t2ics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/de.logerbyte.bc2t2ics_main.iml" filepath="$PROJECT_DIR$/.idea/modules/de.logerbyte.bc2t2ics_main.iml" group="de.logerbyte.bc2t2ics" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/de.logerbyte.bc2t2ics_test.iml" filepath="$PROJECT_DIR$/.idea/modules/de.logerbyte.bc2t2ics_test.iml" group="de.logerbyte.bc2t2ics" />
     </modules>
   </component>
 </project>
