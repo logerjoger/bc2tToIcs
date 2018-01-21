@@ -18,11 +18,12 @@ public class Bc2TaskFileTest {
 
     @Test
     public void test_delete_lineSeparator() throws IOException {
-        String string = new String(Files. readAllBytes(Paths.get("bc2t_test_file" + File.separator + "test_lineSeparator")), StandardCharsets.UTF_8);
+        String string = new String(Files. readAllBytes(Paths.get("bc2t_test_file" + File.separator + "fake_bc2_file.txt")), StandardCharsets.UTF_8);
 
         Assert.assertTrue(string.contains(System.lineSeparator()));
         String newString = string.replace(System.lineSeparator(), " ");
         Assert.assertFalse(newString.contains(System.lineSeparator()));
+        Assert.assertTrue(newString.contains("/n"));
     }
 
     @Test
