@@ -1,0 +1,46 @@
+[{"class-type":"Task","allDayBeforeMoveToToday":false,"beginBeforeMoveToToday":0,"emoticon":0,"extra
+Subtask":false,"hasSubTasks":false,"movedToToday":false,"priority":0,"status":true,"subTasks":[],"tr
+ashed":false,"useCompletionDate":false,"accountId":"local_account","accountName":"Lokal","accountTyp
+e":"LOCAL","allDay":true,"begin":1459123200000,"canInvite":false,"canModify":true,"canRespond":false
+,"collectionAccessLevel":700,"collectionColor":-16204544,"collectionFavorite":100,"collectionId":"56
+d6aa3e-9ee1-44c9-ae1c-10a058fb059e","collectionIsPrimary":false,"collectionName":"local","collection
+TimeZone":"Europe/Berlin","collectionVisible":true,"color":-16204544,"description":"","dtend":145920
+9600000,"dtstart":1459123200000,"end":1459209600000,"endDay":2457476,"endMinute":0,"fakeBegin":14591
+23200000,"fakeEnd":1459209600000,"fakeTimes":false,"flagBoolean1":false,"flagBoolean2":false,"flagBo
+olean3":false,"flagBoolean4":false,"hasReminders":false,"id":"b8610966-81e1-400e-b5c5-35f82541bbd0",
+"isEventCopy":false,"itemId":"b8610966-81e1-400e-b5c5-35f82541bbd0","location":"","mColumn":0,"mMaxC
+olumns":0,"markedForDeletion":false,"multiDayDuplicate":false,"multiDayOriginalBegin":1459123200000,
+"multiDayOriginalStartDay":2457476,"multiDayOriginalStartMinute":0,"startDay":2457476,"startMinute":
+0,"textColorOnBlankBg":-16204544,"textColorOnColoredBgIsWhite":true,"timeZone":"UTC","title":"Test Title EINS/n"},
+
+{"class-type":"Task","allDayBeforeMoveToToday":false,"beginBeforeMoveToToday":0
+,"emoticon":0,"extraSubtask":false,"hasSubTasks":false,"movedToToday":false,"priority":0,"status":tr
+ue,"subTasks":[],"trashed":false,"useCompletionDate":false,"accountId":"local_account","accountName"
+:"Lokal","accountType":"LOCAL","allDay":false,"begin":1461967200000,"canInvite":false,"canModify":tr
+ue,"canRespond":false,"collectionAccessLevel":700,"collectionColor":-16204544,"collectionFavorite":1
+00,"collectionId":"56d6aa3e-9ee1-44c9-ae1c-10a058fb059e","collectionIsPrimary":false,"collectionName
+":"local","collectionTimeZone":"Europe/Berlin","collectionVisible":true,"color":-16204544,"descripti
+on":"","dtend":1461967200000,"dtstart":1461967200000,"end":1461967200000,"endDay":2457509,"endMinute
+":0,"fakeBegin":1461967200000,"fakeEnd":1461967200000,"fakeTimes":false,"flagBoolean1":false,"flagBo
+olean2":false,"flagBoolean3":false,"flagBoolean4":false,"hasReminders":false,"id":"ab0937f6-ba50-466
+9-9b4d-5eace753943b","isEventCopy":false,"itemId":"ab0937f6-ba50-4669-9b4d-5eace753943b","location":
+"","mColumn":0,"mMaxColumns":0,"markedForDeletion":false,"multiDayDuplicate":false,"multiDayOriginal
+Begin":1461967200000,"multiDayOriginalStartDay":2457509,"multiDayOriginalStartMinute":0,"startDay":2
+457509,"startMinute":0,"textColorOnBlankBg":-16204544,"textColorOnColoredBgIsWhite":true,"timeZone":
+"Europe/Berlin","title":"Test Title ZWEI"},
+
+{"class-type":"Task","allDayBeforeMoveToToday":fa
+lse,"beginBeforeMoveToToday":0,"emoticon":0,"extraSubtask":false,"hasSubTasks":false,"movedToToday":
+false,"priority":0,"status":true,"subTasks":[],"trashed":false,"useCompletionDate":false,"accountId"
+:"local_account","accountName":"Lokal","accountType":"LOCAL","allDay":false,"begin":1458802800000,"c
+anInvite":false,"canModify":true,"canRespond":false,"collectionAccessLevel":700,"collectionColor":-1
+6204544,"collectionFavorite":100,"collectionId":"56d6aa3e-9ee1-44c9-ae1c-10a058fb059e","collectionIs
+Primary":false,"collectionName":"local","collectionTimeZone":"Europe/Berlin","collectionVisible":tru
+e,"color":-16204544,"description":"","dtend":1458802800000,"dtstart":1458802800000,"end":14588028000
+00,"endDay":2457472,"endMinute":480,"fakeBegin":1458802800000,"fakeEnd":1458802800000,"fakeTimes":fa
+lse,"flagBoolean1":false,"flagBoolean2":false,"flagBoolean3":false,"flagBoolean4":false,"hasReminder
+s":true,"id":"30b6ec4f-74e5-4f85-b0a6-41c4ecb277b4","isEventCopy":false,"itemId":"30b6ec4f-74e5-4f85
+-b0a6-41c4ecb277b4","location":"","mColumn":0,"mMaxColumns":0,"markedForDeletion":false,"multiDayDup
+licate":false,"multiDayOriginalBegin":1458802800000,"multiDayOriginalStartDay":2457472,"multiDayOrig
+inalStartMinute":480,"startDay":2457472,"startMinute":480,"textColorOnBlankBg":-16204544,"textColorO
+nColoredBgIsWhite":true,"timeZone":"Europe/Berlin","title":"Test Title DREI"}]
