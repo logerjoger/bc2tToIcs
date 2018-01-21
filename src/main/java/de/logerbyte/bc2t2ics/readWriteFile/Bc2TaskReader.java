@@ -13,10 +13,10 @@ public class Bc2TaskReader {
 
     public Bc2TaskJson[] createBc2tJsonFromFile(@NotNull String arg) throws FileNotFoundException {
         Gson gson = new Gson();
-        File bc2TaskFile = new File();
-        bc2TaskFile.setPathName(arg);
+        FileContent bc2TaskFileContent = new FileContent();
+        bc2TaskFileContent.setPathName(arg);
 
-        java.io.File file = new java.io.File(bc2TaskFile.getPathName());
+        java.io.File file = new java.io.File(bc2TaskFileContent.getPathName());
         JsonReader jsonReader;
 
         jsonReader = new JsonReader(new FileReader(file));

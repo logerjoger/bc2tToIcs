@@ -9,7 +9,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class FileTest {
+public class FileContentTest {
 
     @Test
     public void test_delete_lineSeparator() throws IOException {
