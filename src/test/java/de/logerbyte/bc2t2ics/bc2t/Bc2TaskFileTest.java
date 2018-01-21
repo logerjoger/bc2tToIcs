@@ -26,7 +26,7 @@ public class Bc2TaskFileTest {
     }
 
     @Test
-    public void test_write_into_file() throws IOException {
+    public void test_create_and_write_into_file() throws IOException {
         String writeContent = "That is a test file creation.";
         String pathName = "bc2t_test_file" + File.separator + "test_wrote_into files";
         Files.write(Paths.get(pathName), writeContent.getBytes());
@@ -35,5 +35,8 @@ public class Bc2TaskFileTest {
         Assert.assertTrue(file.exists());
         String string = new String(Files. readAllBytes(Paths.get(pathName)), StandardCharsets.UTF_8);
         Assert.assertTrue(string.contains(writeContent));
+        Assert.assertTrue(Files.deleteIfExists(Paths.get(pathName)));
     }
+
+
 }
