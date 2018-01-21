@@ -1,6 +1,6 @@
-package de.logerbyte.bc2t2ics.bc2t;
+package de.logerbyte.bc2t2ics.readWriteFile;
 
-class Bc2TaskFile {
+class File {
     private String pathName;
 
     String getPathName() {

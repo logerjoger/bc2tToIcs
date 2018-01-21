@@ -1,6 +1,6 @@
 package de.logerbyte.bc2t2ics;
 
-import de.logerbyte.bc2t2ics.bc2t.Bc2TaskReader;
+import de.logerbyte.bc2t2ics.readWriteFile.Bc2TaskReader;
 import org.junit.Test;
 
 import java.io.File;

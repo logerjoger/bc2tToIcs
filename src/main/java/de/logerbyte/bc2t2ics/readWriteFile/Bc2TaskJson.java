@@ -1,4 +1,4 @@
-package de.logerbyte.bc2t2ics.bc2t;
+package de.logerbyte.bc2t2ics.readWriteFile;
 
 import java.util.List;
 
