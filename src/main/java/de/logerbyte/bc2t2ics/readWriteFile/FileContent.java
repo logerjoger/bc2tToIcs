@@ -8,6 +8,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 class FileContent {
+    public static final String REGEX_DATE = "\\d\\d.\\d\\d.\\d\\d\\d\\d";
+
     private String pathName;
 
     String getPathName() {
@@ -25,5 +27,9 @@ class FileContent {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public String[] splitContent(String content, String regex) {
+        return content.split(regex);
     }
 }
