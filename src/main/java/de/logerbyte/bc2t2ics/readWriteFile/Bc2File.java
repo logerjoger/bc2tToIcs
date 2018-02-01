@@ -37,6 +37,7 @@ public class Bc2File {
         }
 
         try {
+            // TODO: 01.02.18 wrong path. Create Ical file. Dont usw fake file and append
             Files.write(path, sb.toString().getBytes(), StandardOpenOption.APPEND);
         } catch (IOException e) {
             e.printStackTrace();
