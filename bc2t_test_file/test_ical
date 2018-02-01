@@ -15,9 +15,6 @@ DTEND:20060919T215900Z
 DTSTAMP:20060812T125900Z
 END:VEVENT
 
-VERSION:2.0
-PRODID:http://www.example.com/calendarapplication/
-METHOD:PUBLISH
 BEGIN:VEVENT
 UID:461092315540@example.com
 ORGANIZER;CN="Alice Balder, Example Inc.":MAILTO:alice@example.com
@@ -30,9 +27,6 @@ DTEND:20060919T215900Z
 DTSTAMP:20060812T125900Z
 END:VEVENT
 
-VERSION:2.0
-PRODID:http://www.example.com/calendarapplication/
-METHOD:PUBLISH
 BEGIN:VEVENT
 UID:461092315540@example.com
 ORGANIZER;CN="Alice Balder, Example Inc.":MAILTO:alice@example.com

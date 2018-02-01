@@ -4,12 +4,13 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class FileContentTest {
+public class Bc2FileTest {
 
     @Test
     public void test_delete_lineSeparator() throws IOException {
@@ -32,6 +33,12 @@ public class FileContentTest {
         String string = new String(Files. readAllBytes(Paths.get(pathName)), StandardCharsets.UTF_8);
         Assert.assertTrue(string.contains(writeContent));
         Assert.assertTrue(Files.deleteIfExists(Paths.get(pathName)));
+    }
+
+    @Test
+    public void test_create_icalFile() throws FileNotFoundException {
+        Bc2TaskJson[] bc2tJsonFromFile = new Bc2TaskReader().createBc2tJsonFromFile("bc2t_test_file" + File.separator + "bc2t_test.txt");
+        new Bc2File().createIcalFile(bc2tJsonFromFile);
     }
 
 
