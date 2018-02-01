@@ -10,6 +10,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 
 public class Bc2File {
     public static final String REGEX_DATE = "\\d\\d.\\d\\d.\\d\\d\\d\\d";
@@ -36,7 +37,7 @@ public class Bc2File {
         }
 
         try {
-            Files.write(path, sb.toString().getBytes(), null);
+            Files.write(path, sb.toString().getBytes(), StandardOpenOption.APPEND);
         } catch (IOException e) {
             e.printStackTrace();
         }
