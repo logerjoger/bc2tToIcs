@@ -5,7 +5,6 @@ import de.logerbyte.bc2t2ics.ical.IcalConstants;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -14,11 +13,12 @@ import java.nio.file.StandardOpenOption;
 
 public class Bc2File {
     public static final String REGEX_DATE = "\\d\\d.\\d\\d.\\d\\d\\d\\d";
+    public static final String OUT_PATH = "bc2t_test_file" + File.separator + "out.ical";
 
     private String pathName;
 
-    public static void createIcalFile(Bc2TaskJson[] jsonFile) {
-        Path path = Paths.get("bc2t_test_file" + File.separator + "fake_bc2_file.txt");
+    public static void createIcalFile(Bc2TaskJson[] jsonFile, String outPath) {
+        Path path = Paths.get(outPath);
 
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < jsonFile.length; i++) {
@@ -37,7 +37,6 @@ public class Bc2File {
         }
 
         try {
-            // TODO: 01.02.18 wrong path. Create Ical file. Dont usw fake file and append
             Files.write(path, sb.toString().getBytes(), StandardOpenOption.APPEND);
         } catch (IOException e) {
             e.printStackTrace();

@@ -4,13 +4,14 @@ import de.logerbyte.bc2t2ics.readWriteFile.Bc2File;
 import de.logerbyte.bc2t2ics.readWriteFile.Bc2TaskJson;
 import de.logerbyte.bc2t2ics.readWriteFile.Bc2TaskReader;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 
 class MainController {
 
     MainController(String[] args) {
         Bc2TaskJson[] bcJson = createBCJson(args);
-        Bc2File.createIcalFile(bcJson);
+        Bc2File.createIcalFile(bcJson, "bc2t_test_file" + File.separator + "fake_bc2_file.txt");
     }
 
     private Bc2TaskJson[] createBCJson(String[] args) {
