@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="de.logerbyte.bc2t2ics_main:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/de_logerbyte_bc2t2ics_main_jar</output-path>
+    <root id="archive" name="de.logerbyte.bc2t2ics_main.jar">
+      <element id="module-output" name="de.logerbyte.bc2t2ics_main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.2/3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf/gson-2.8.2.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

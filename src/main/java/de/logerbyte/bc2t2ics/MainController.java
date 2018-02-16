@@ -10,13 +10,13 @@ import java.io.FileNotFoundException;
 class MainController {
 
     MainController(String[] args) {
-        Bc2TaskJson[] bcJson = createBCJson(args);
+        Bc2TaskJson[] bcJson = createBCJson("bc2t_test_file" + File.separator + "bc2t_test_file.txt");
         Bc2File.createIcalFile(bcJson, "bc2t_test_file" + File.separator + "fake_bc2_file.txt");
     }
 
-    private Bc2TaskJson[] createBCJson(String[] args) {
+    private Bc2TaskJson[] createBCJson(String args) {
         try {
-            return new Bc2TaskReader().createBc2tJsonFromFile(args[0]);
+            return new Bc2TaskReader().createBc2tJsonFromFile(args);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
