@@ -17,8 +17,10 @@ public class Bc2File {
 
     private String pathName;
 
-    public static void createIcalFile(Bc2TaskJson[] jsonFile, String outPath) {
-        Path path = Paths.get(outPath);
+    public static void createIcalFile(Bc2TaskJson[] jsonFile) {
+        createNewFile(OUT_PATH);
+
+        Path path = Paths.get(OUT_PATH);
 
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < jsonFile.length; i++) {
@@ -38,6 +40,17 @@ public class Bc2File {
 
         try {
             Files.write(path, sb.toString().getBytes(), StandardOpenOption.APPEND);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static void createNewFile(String path) {
+        File file = new File(path);
+        file.getParentFile().mkdirs();
+        try {
+            file.delete();
+            file.createNewFile();
         } catch (IOException e) {
             e.printStackTrace();
         }
