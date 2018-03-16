@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# Automatically adds branch-basename (last eleement of full branch path) every commit message. This should be the ticketnumber in most cases.
+#
+NAME=$(git branch | grep '*' | sed 's/* //')
+NAME=$(basename "$NAME")
+if [ -n "$NAME" ]; then
+    echo -n "$NAME"': '|cat - "$1" > /tmp/out && mv /tmp/out "$1"
+else
+    echo -n "Repository initialization"': '|cat - "$1" > /tmp/out && mv /tmp/out "$1" 
+fi
