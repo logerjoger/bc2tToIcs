@@ -38,7 +38,7 @@ public class Bc2FileTest {
     @Test
     public void test_create_icalFile() throws FileNotFoundException {
         Bc2TaskJson[] bc2tJsonFromFile = new Bc2TaskReader().createBc2tJsonFromFile("bc2t_test_file" + File.separator + "bc2t_test.txt");
-        new Bc2File().createIcalFile(bc2tJsonFromFile, Bc2File.OUT_PATH);
+        new Bc2File().createIcalFile(bc2tJsonFromFile);
     }
 
 
